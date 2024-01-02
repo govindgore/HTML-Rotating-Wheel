@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .wheel-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+
+    .wheel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 60%;
+      border: 80px solid transparent;
+      box-sizing: border-box;
+      transition: transform 0.5s ease, border-color 0.5s ease;
+      border-color: #3498db #e74c3c #2ecc71 #f39c12;
+    }
+
+    .wheel:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="wheel-container">
+  <div class="wheel"></div>
+</div>
+
+</body>
+</html>
